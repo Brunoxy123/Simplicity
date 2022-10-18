@@ -37,6 +37,7 @@ header h1 a{
     nav ul{
         padding: 0;
         justify-content: center;
+        gap: 20px;
     }
 
 }
