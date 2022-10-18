@@ -100,9 +100,11 @@ article{
 }
 
 article p{
-    font-size: 22px;
+    font-size: clamp(15px 2vw 19px);
     font-family: Poppins;
     color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 /* ------------- */
