@@ -79,6 +79,9 @@ nav ul li a{
     max-width: 100vw;
 
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner::before{
@@ -90,6 +93,56 @@ nav ul li a{
     background-color: rgba(0, 0, 0, 0.589);
     content: '';
 }
+
+.banner div{
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    padding: 0 5px 0 5px;
+
+}
+
+@media screen and (min-width: 780px){
+    .banner div{
+        width: 60%;
+        padding: 0 15px 0 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.banner div h1{
+    font-family: 'Poppins';
+    font-size: clamp(50px, 5vw, 64px);
+    color: #df1a9c;
+    margin: 0;
+    height: 80px;
+}
+
+.banner .titulo{
+    padding-bottom: 35px;
+}
+
+.banner .texto{
+    margin-right: 50px;
+}
+
+.texto p:first-child{
+    color: #3b90f0;
+    font-size: clamp(18px, 2vw, 24px);
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+.texto p:last-child{
+    color: #3b90f0;
+    font-size: clamp(25px, 2vw, 32px);
+    font-family: 'poppins';
+    font-weight: 500;
+    margin-top: 8px;
+}
+
 
 article{
     background-color: #a4009a;
@@ -107,6 +160,7 @@ article p{
     text-align: center;
     padding: 10px;
 }
+
 
 /* ------------- */
 
